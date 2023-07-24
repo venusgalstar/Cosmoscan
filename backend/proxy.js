@@ -14,7 +14,7 @@ app.use(cors({ origin: "*" }));
 async function getReponse(req, res) {
 
     const protocol = "https";
-    const host = req.hostname == "localhost" ? "www.mintscan.io" : req.hostname;
+    const host = "www.mintscan.io";
     const url = req.originalUrl;
 
     const fullUrl = `${protocol}://${host}${url}`;
